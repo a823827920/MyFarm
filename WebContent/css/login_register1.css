@@ -1,0 +1,114 @@
+
+.bg{
+	width: 100%;
+}
+.bg .filter{
+	position: absolute;
+	width: 100%;
+	filter: blur(5px);
+}
+.title{
+	width: 100%;
+	position: absolute;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+	font-family: "幼圆";
+	
+}
+.login_form{
+	position: absolute;
+	width:50%;
+	top:150px;
+	margin: 0 25%;
+	height: 500px;
+	background-color: rgba(0,0,0,0.3);
+}
+.tou img{
+	width: 10%;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 50px;
+	margin:0 45%;
+	margin-top:8%;
+}
+.ban{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(61, 61, 61, 1);
+}
+.ban i{
+	position: relative;
+    color: #9E9E9E;
+    border: 1px solid #9E9E9E;
+    border-radius: 50%;
+    font-size: 1.2em;
+    top: 0.9em;
+    left: 1em;
+}
+.layui-form{
+	position: relative;
+    top: 51px;
+    left: 227px;
+}
+.layui-form .text{
+    background-color: rgba(252, 252, 252, 0.72);
+    border: 0px solid;
+    height: 41px;
+    width: 254px;
+    padding: 0;
+    text-indent: 1em;
+    font-size: 1.2em;
+    box-sizing: content-box;
+    border-radius: 7px;
+    font-family: "黑体";
+}
+.input_ico{
+    width: 50px;
+    position: relative;
+    font-size: 40px;
+    top: 8px;
+    color: white;
+}
+.button{
+    width: 60px;
+    border: 1px solid #ffffff00;
+    border-radius: 10px;
+    height: 35px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    top: 26px;
+    background-color: #ffffff6b;
+    left: 92px;
+}
+[class^="dian"]{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border: 0 solid;
+	border-radius: 50%;
+}
+.dian1{
+    right: 76px;
+    top: 15px;
+    background-color: #00F7DE;
+}
+.dian2{
+	right: 46px;
+    top: 15px;
+    background-color: #00BCD4;
+
+}
+.dian3{
+    right: 18px;
+    top: 15px;
+    background-color: #03A9F4;
+}
+.info{
+	text-align: center;
+	font-size: 20px;
+	position: relative;
+	top:30px;
+	color: red;
+}

@@ -1,0 +1,63 @@
+.footer{
+			width: 100%;
+			height:400px;
+			padding-top: 38px;
+			box-sizing: border-box;
+			background: url(../img/other_img/8.jpg) no-repeat 0px 0px;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.footr{
+			width: 100%;
+			height: 100px;
+			top: 82px;
+			position: relative;
+			background-color: #00000047;
+			text-align: center;
+			
+		}
+		.conta{
+			width: 70%;
+			margin: 0 15%;
+		}
+		.conta p{
+			font-size: 2em;
+			font-family: "幼圆";
+			color: white;
+		}
+		.footr p{
+			font-size: 2em;
+			font-family: "幼圆";
+			color: white;
+		}
+		.mi{
+			width: 50%;
+			margin: 0 25%;
+			padding-top: 28px;
+		}
+		.conta ul li{
+			color: white;
+			font-family: "幼圆";
+			line-height: 2em;
+		}
+		.conta p label{
+			color: black;
+			display: inline-block;
+			padding: 5px;
+			background-color: white;
+		}
+		.hr:after{
+			content: '';
+		    background: #a4dd25;
+		    width: 25%;
+		    height: 2px;
+		    position: absolute;
+		    top: 38px;
+		    left: 0%;
+		    box-sizing: border-box;
+		}
+		.ltel{
+			font-family: 'Bree Serif', serif;
+			color: white;
+			font-size: 2.5em;
+		}

@@ -1,0 +1,137 @@
+.main_content{
+	width: 70%;
+	margin: 0 15%;
+	position: relative;
+	top: 46px;
+}
+.vedio_dis{
+	display: inline-block;
+	position:relative;
+	width: 70%;
+	height:500px;
+}
+.article{
+	display: inline-block;
+	position:relative;
+	width: 70%;
+	top:-50px;
+	/*border: 1px solid black;*/
+	height:500px;
+}
+.category{
+	display: inline-block;
+	width: 20%;
+	position: absolute;
+	margin-left: 28px;
+	font-family: "幼圆";
+}
+.date_category{
+	display: inline-block;
+	width: 20%;
+	position: absolute;
+	margin-left: 28px;
+	font-family: "幼圆";
+	top: 222px;
+}
+[class*=category] ul{
+	line-height: 1.8em;
+}
+[class*=category] li{
+	text-indent: 2em;
+	transition: all ease 0.5s;
+	background:url(../img/other_img/333.png) no-repeat 0 ;
+}
+[id^=d]:hover{
+	text-indent: 3em;
+}
+a:hover{
+	color:#64dfe2;
+}
+h1{
+	font-size: 1.8em;
+	color:#64dfe2;
+}
+.article p{
+	font-family: "幼圆";
+	line-height: 2em;
+}
+/*右侧推文*/
+.tuiw{
+	display: inline-block;
+	position: absolute;
+	width: 20%;
+	margin-left: 28px;
+	height: 300px;
+	font-family: "幼圆";
+}
+.tuiw span{
+	font-family: "幼圆";
+	color:#64dfe2;
+}
+.onetw{
+	margin-top: 2em;
+}
+.con{
+	margin-left: 10px;
+	transform: translateY(-10px);
+}
+.onetw img{
+	width: 40%;
+	display: inline-block;
+	
+}
+.con{
+	display: inline-block;
+	width: 49%;
+	
+}
+/*评论*/
+.comments{
+	/*border: 1px solid black;*/
+	width: 70%;
+	height: 500px;
+}
+.comments span{
+	font-family: "幼圆";
+	font-size: 2em;
+	color:#64dfe2;
+}
+.toux{
+	display: inline-block;
+	    margin: 10px;
+}
+.toux img{
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 100px;
+}
+.onecomm{
+	background-color: whitesmoke;
+}
+.comcont{
+	display: inline-block;
+	width: 60%;
+	position: relative;
+    top: 24px;
+    left: 12px;
+
+	
+}
+.onetw img {
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    bottom: 39px;
+    }
+.comcont h3{
+	color:#64dfe2;
+}
+.comcont p{
+	font-size: 0.9em;
+	font-family: "宋体";
+	line-height: 1.3em;
+}
+.pos{
+	position: absolute;
+}

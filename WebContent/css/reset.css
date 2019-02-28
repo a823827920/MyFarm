@@ -1,0 +1,21 @@
+body{
+	position:relative;
+	margin: 0 auto;
+	min-width: 1500px;
+	background-color: #f6f0ecf2;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	color: black;
+}
+input{
+	padding-left:1em;
+}
+textarea{
+	padding-left:1em;
+}
