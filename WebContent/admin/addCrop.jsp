@@ -24,7 +24,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">植物ID  :</label>
                 <div class="layui-input-block">
-                    <input type="text" id="plant_id" name="plant_id" disabled="disabled"  autocomplete="off"  class="layui-input">
+                    <input type="text" id="plant_id" name="plant_id"  disabled="disabled"  autocomplete="off"  class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
@@ -93,7 +93,7 @@
                     }
                 } ,
                 error: function(){
-                    alert("网络忙，请稍后重试！");
+                    alert("请填写正确的土地ID！");
                 },complete: function () {
                     layer.closeAll('loading');
                 }

@@ -11,7 +11,7 @@
 		<fieldset class="layui-elem-field" style="margin: 20px;">
 			<legend>收货人信息</legend>
 			<div class="layui-field-box">
-				<form class="layui-form" action="">
+				<form class="layui-form" action="Odering" method="post">
 					<div class="layui-form-item">
 					 	<input type="hidden" name="id">
 						<div class="layui-input-inline">
@@ -51,13 +51,13 @@
 
 
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		
 		<script type="text/javascript" src="layui/lay/layui.all.js"></script>
 		<script src="js/citys.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			pca.init('select[name=P1]', 'select[name=C1]', 'select[name=A1]', '北京', '北京', '朝阳区');
 		</script>
-		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
-		<script src="${pageContext.request.contextPath}/layui/layui.js" charset="utf-8"></script>
+		<!--  <script type="text/javascript" src="layui/layui.js" charset="utf-8"></script>
 		<script type="text/javascript">
 		layui.use(['form', 'layedit', 'laydate'], function(){
 		    	var form = layui.form
@@ -102,5 +102,6 @@
 		        });
 		    });
 		</script>
+		-->
 	</body>
 </html>

@@ -78,7 +78,6 @@
 					<a href="index.jsp">HOME</a>
 					<a href="zone.jsp">ZONE</a>
 					<a href="#" style="color: greenyellow;">STORE</a>
-					<a href="contact.jsp">CONTACT</a>
 					<lable>|</label>
 					<%
 						if(session.getAttribute("user")==null){
@@ -102,7 +101,6 @@
 					<a href="index.jsp">HOME</a>
 					<a href="zone.jsp">ZONE</a>
 					<a href="#" style="color: greenyellow;">STORE</a>
-					<a href="contact.jsp">CONTACT</a>
 					<lable>|</label>
 					<%
 						if(session.getAttribute("user")==null){
@@ -204,7 +202,7 @@
 			</div>
 			<div class="footr">
 				<div class="mi">
-					<p>Copyright ©2018 author-丁权</p>
+					<p>Copyright ©2018 author-佚名</p>
 				</div>
 			</div>
 		</div>
@@ -360,13 +358,13 @@
 						id: price //防止重复弹出
 							,
 						content: '<form class="layui-form" action="Planting"><div style="padding: 0px 0px;width:400px;text-align:center;margin:0 100px">' + '<span class=seed_plant><img src=' + tt + '>' + '</span>\
-						<br><label>请选择种植的单位：<input type=hidden name=pid value='+pid+'><div class="layui-form-item"><div class="layui-input-inline"><input style="margin-left:160px;"  onchange="ccc()" id="aaa" name="amount" type=number  min=1 max='+num+'></div></div><button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button></label><br><div class=mes_box><p>共计<label id=bbb></label>金币</p></div></div></form>',
+						<br><label><p>请选择种植的单位：</p><input type=hidden name=pid value='+pid+'><div class="layui-form-item"><div class="layui-input-inline"><input style="margin-left:160px;" class="num" lay-skin="primary"   onchange="ccc()" id="aaa" value="1" name="amount" type=number  min=1 max='+num+'></div></div><button class="layui-btn layui-btn-warm" lay-submit="" lay-filter="demo1">提交</button></label><br><div class=mes_box><p>共计<label id=bbb>0</label>金币</p></div></div></form>',
 						//						btn: '关闭全部',
 						btnAlign: 'c' //按钮居中
 							,
 						shade: [0.8, '#393D49'] //显示遮罩
 							,
-						area: ['600px', '400px'],
+						area: ['600px', '480px'],
 						yes: function() {
 							layer.closeAll();
 						}

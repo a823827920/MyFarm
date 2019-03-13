@@ -46,7 +46,6 @@
 				<a href="index.jsp">HOME</a>
 				<a href="zone.jsp">ZONE</a>
 				<a href="store.jsp">STORE</a>
-				<a href="contact.jsp">CONTACT</a>
 				<lable>|</label>
 					<%
 						if(session.getAttribute("user")==null){
@@ -127,7 +126,7 @@
 									<i class="layui-icon">&#xe67c;</i>上传头像
 								</button>
 								<p>建议尺寸168*168，支持jpg、png、gif，最大不能超过50KB</p>
-								<span><img class="layui-upload-img" id="demo2"></span>
+								<span><img class="layui-upload-img" id="demo2" src="/img/other_img/${user.img }"></span>
 								<form class="layui-form" action="">
 								      <input type="hidden" name="img" id="img">
 								      <button class="layui-btn" lay-submit="" lay-filter="formDemo1" style="margin-top:10px;">保存头像</button>

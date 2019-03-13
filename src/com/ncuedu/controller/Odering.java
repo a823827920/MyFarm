@@ -25,24 +25,29 @@ public class Odering extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		String map=request.getParameter("map");
-		JSONObject obj=JSONObject.fromObject(map);
+		/*String map=request.getParameter("map");
+		JSONObject obj=JSONObject.fromObject(map);*/
 		Order o=new Order();
-		int cid=obj.getInt("id");
+		String Sid=request.getParameter("id");
+		int cid=0;
+		try {
+			cid=Integer.parseInt(Sid);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 		CropService cs=new CropServiceImpl();
 		Crop crop=cs.getCropByCid(cid);
 		cs.deleteCrop(cid);
 		o.setCrop(crop);
 		o.setDowndate(new Date());
-		o.setAddr(obj.getString("P1")+obj.getString("C1")+obj.getString("A1")+obj.getString("area"));
-		o.setName(obj.getString("name"));
-		o.setTel(obj.getString("tel"));
+		o.setAddr(request.getParameter("P1")+request.getParameter("C1")+request.getParameter("A1")+request.getParameter("area"));
+		o.setName(request.getParameter("name"));
+		o.setTel(request.getParameter("tel"));
 		OrderService os=new OrderServiceImpl();
 		int result=os.addAnOrder(o);
-		PrintWriter pw=response.getWriter();
-		pw.println(result);
-		pw.flush();
-		pw.close();
+		if(result>=1) {
+			request.getRequestDispatcher("success.jsp").forward(request, response);
+		}
 	}
 
 }

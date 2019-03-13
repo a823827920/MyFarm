@@ -57,7 +57,7 @@ public class StoreItemDaoImpl implements StoreItemDao {
 		ResultSet rs=null;
 		ArrayList<StoreItem> list=new ArrayList<>();
 		PlantDao pd=new PlantDaoImpl();
-		String sql="select item_id,plant_id,plant_num from storeitem_table where user_id =?";
+		String sql="select item_id,plant_id,plant_num from storeitem_table where user_id =? and plant_num>0";
 		try {
 			ps=con.prepareStatement(sql);
 			ps.setInt(1, id);
@@ -80,10 +80,10 @@ public class StoreItemDaoImpl implements StoreItemDao {
 		return list;
 	}
 	public static void main(String[] args) {
-		StoreItemDao sid=new StoreItemDaoImpl();
+		/*StoreItemDao sid=new StoreItemDaoImpl();
 		Plant plant=new Plant(10000, null, 100, null, null, null, 2, null, 2);
 		StoreItem si=new StoreItem(plant, 10, 2);
-		sid.addStoreItem(si);
+		sid.addStoreItem(si);*/
 		//System.out.println(sid.queryStockById(1));
 	}
 

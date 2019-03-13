@@ -26,8 +26,14 @@ public class Planting extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String Spid=request.getParameter("pid");
 		String Samount=request.getParameter("amount");
-		int pid=Integer.parseInt(Spid);
-		int amount=Integer.parseInt(Samount);
+		int pid=0;
+		int amount=0;
+		try {
+			pid=Integer.parseInt(Spid);
+			amount=Integer.parseInt(Samount);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 		User user=(User)request.getSession().getAttribute("user");
 		int uid=0;
 		if(user!=null) {

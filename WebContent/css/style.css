@@ -734,6 +734,7 @@ nav ul li a::before {
 	height: 300px;
 	background-color: #ffffff66 !important;
 	display: inline-block;
+	border-radius:20px;
 }
 
 .layui-col-xs2 input:checked+label {
@@ -796,14 +797,14 @@ nav ul li a::before {
 }
 .seed_plant {
 	margin-top: 50px;
-	width: 220px;
+	width: 360px;
 	border-radius: 50%;
 	height: 220px;
 	display: inline-block;
 	overflow: hidden;
 }
 .seed_plant img {
-	width: 300px;
+	width: 242px;
 }
 [class^=seed_title] span {
 	background-color: #fff;
@@ -926,4 +927,13 @@ nav ul li a::before {
 	width: 100px;
 	height: 74px;
 	position: absolute;
+}
+.num {
+    height: 1.1em;
+    border: 1px solid #8BC34A;
+    transform: scale(1.4);
+    margin-top:10px;
+}
+#im1{
+	filter: grayscale(0);
 }

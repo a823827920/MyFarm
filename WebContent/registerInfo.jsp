@@ -15,7 +15,6 @@
 				<a href="index.jsp">HOME</a>
 				<a href="zone.jsp">ZONE</a>
 				<a href="store.jsp">STORE</a>
-				<a href="contact.html">CONTACT</a>
 				<lable>|</label>
 					<%
 						if(session.getAttribute("user")==null){
@@ -35,7 +34,7 @@
 			<a href="index.jsp"><button class="layui-btn layui-btn-warm">转至首页</button></a>
 		</div>
 		<div class="foot_box">
-			<p>Copyright ©2018 author-丁权</p>
+			<p>Copyright ©2018 author-佚名</p>
 		</div>
 	</body>
 </html>

@@ -23,8 +23,6 @@
 					<a href="index.jsp" style="color: greenyellow;">HOME</a>
 					<a href="zone.jsp">ZONE</a>
 					<a href="store.jsp">STORE</a>
-					<a href="contact.html">CONTACT</a>
-
 				</nav>
 			</div>
 			<span class="tit">欢迎注册！</span>
@@ -140,7 +138,7 @@
 			</div>
 			<div class="footr">
 				<div class="mi">
-					<p>Copyright ©2018 author-丁权</p>
+					<p>Copyright ©2018 author-佚名</p>
 				</div>
 			</div>
 		</div>

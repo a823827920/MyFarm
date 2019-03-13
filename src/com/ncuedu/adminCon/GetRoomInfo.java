@@ -23,7 +23,7 @@ public class GetRoomInfo extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setCharacterEncoding("utf-8");
 		String Sfield_id=request.getParameter("field_id");
-		int field_id=0;
+		int field_id=-1;
 		try {
 			field_id=Integer.parseInt(Sfield_id);
 		}catch(Exception e) {
